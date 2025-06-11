@@ -22,5 +22,7 @@ steps:
           -Dsonar.projectName=elasticsearch-sonar-5m-cloudbuild \
           -Dsonar.sources=. \
           -Dsonar.host.url=https://sonar-demo-pt.iexperts.cloud \
-          -Dsonar.login=sqp_bcc1cc9b0e7043bce4e8f0cdf4617ec9e7015b71 \
+          -Dsonar.login=sqp_7a6cc9cba865de08bc98f0b50a5c93d6701c23a6 \
+          -Dsonar.log.level=DEBUG \
+          -Dsonar.scanner.app.jvm.opts="-Xmx16g -Xms512m" \
           -Dsonar.working.directory=/tmp/.scannerwork
