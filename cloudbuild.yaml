@@ -42,4 +42,5 @@ steps:
           -Dsonar.log.level=DEBUG \
           -Dsonar.scanner.app.jvm.opts="-Xmx16g -Xms512m" \
           -Dsonar.exclusions=**/*.java \
-          -Dsonar.working.directory=/tmp/.scannerwork
+          -Dsonar.working.directory=/tmp/.scannerwork \
+          -Dsonar.dryRun=true
