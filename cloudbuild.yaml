@@ -13,7 +13,7 @@ steps:
   # Elasticsearch uses Maven, so we'll use a Maven builder image.
   # This step will compile your Java code, producing .class files in target/classes.
   - id: 'Compile Java Project'
-    name: 'maven:3.9.6-openjdk-17-slim' # Recommended: Use a specific, stable Maven image with Java 17
+    name: 'maven:3-openjdk-17' # Recommended: Use a specific, stable Maven image with Java 17
     entrypoint: 'mvn'
     args:
       - 'clean'
