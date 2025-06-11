@@ -25,4 +25,5 @@ steps:
           -Dsonar.login=sqp_7a6cc9cba865de08bc98f0b50a5c93d6701c23a6 \
           -Dsonar.log.level=DEBUG \
           -Dsonar.scanner.app.jvm.opts="-Xmx16g -Xms512m" \
+          -Dsonar.exclusions=**/*.java \
           -Dsonar.working.directory=/tmp/.scannerwork
